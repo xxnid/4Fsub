@@ -10,7 +10,7 @@ from config import (
     CUSTOM_CAPTION,
     DISABLE_CHANNEL_BUTTON,
     FORCE_MESSAGE,
-    RESTRICT,
+    PROTEC_CONTENT,
     START_MESSAGE,
 )
 from database.sql import add_user, delete_user, full_userbase, query_msg
@@ -120,7 +120,7 @@ async def start_command(client: Bot, message: Message):
                     chat_id=message.from_user.id,
                     caption=caption,
                     parse_mode=ParseMode.HTML,
-                    protect_content=RESTRICT,
+                    protect_content=PROTEC_CONTENT,
                     reply_markup=reply_markup,
                 )
                 await asyncio.sleep(0.5)
