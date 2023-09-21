@@ -15,7 +15,7 @@ from config import (
     FORCE_SUB_3,
     FORCE_SUB_4,
     LOGGER,
-    RESTRICT,
+    PROTEC_CONTENT,
     START_MESSAGE,
     BOT_TOKEN,
 )
@@ -52,7 +52,7 @@ CHANNEL_DB = <code>{CHANNEL_DB}</code>
 DATABASE_URL = <code>{DATABASE_URL}</code>
     
 <b>OPTIONAL VARS</b>
-RESTRICT = <code>{RESTRICT}</code>
+PROTEC_CONTENT = <code>{PROTEC_CONTENT}</code>
 FORCE_SUB_1 = <code>{FORCE_SUB_1}</code>
 FORCE_SUB_2 = <code>{FORCE_SUB_2}</code>
 FORCE_SUB_3 = <code>{FORCE_SUB_3}</code>
