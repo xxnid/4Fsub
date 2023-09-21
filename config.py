@@ -46,7 +46,7 @@ except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
     
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-DISABLE_BUTTON = strtobool(os.environ.get("DISABLE_BUTTON", "True"))
+DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "True"))
 
 
 LOGS_FILE = "logs.txt"
