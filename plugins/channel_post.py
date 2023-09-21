@@ -66,7 +66,7 @@ async def channel_post(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 
-    if not DISABLE_BUTTON:
+    if not DISABLE_CHANNEL_BUTTON:
         try:
             await post_message.edit_reply_markup(reply_markup)
         except Exception:
@@ -76,7 +76,7 @@ async def channel_post(client: Client, message: Message):
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_DB))
 async def new_post(client: Client, message: Message):
 
-    if DISABLE_BUTTON:
+    if DISABLE_CHANNEL_BUTTON:
         return
 
     converted_id = message.id * abs(client.db_channel.id)
