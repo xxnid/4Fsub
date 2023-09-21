@@ -10,8 +10,8 @@ load_dotenv("config.env")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-API_ID = int(os.environ.get("API_ID", "2040"))
-API_HASH = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
+API_ID = int(os.environ.get("API_ID", ""))
+API_HASH = os.environ.get("API_HASH", "")
 
 CHANNEL_DB = int(os.environ.get("CHANNEL_DB", ""))
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
