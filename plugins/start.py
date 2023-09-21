@@ -8,7 +8,7 @@ from bot import Bot
 from config import (
     ADMINS,
     CUSTOM_CAPTION,
-    DISABLE_BUTTON,
+    DISABLE_CHANNEL_BUTTON,
     FORCE_MESSAGE,
     RESTRICT,
     START_MESSAGE,
@@ -114,7 +114,7 @@ async def start_command(client: Bot, message: Message):
             else:
                 caption = msg.caption.html if msg.caption else ""
 
-            reply_markup = msg.reply_markup if DISABLE_BUTTON else None
+            reply_markup = msg.reply_markup if DISABLE_CHANNEL_BUTTON else None
             try:
                 await msg.copy(
                     chat_id=message.from_user.id,
