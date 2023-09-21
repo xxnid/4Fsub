@@ -201,11 +201,11 @@ async def send_text(client: Bot, message: Message):
             chat_id = int(row[0])
             if chat_id not in ADMINS:
                 try:
-                    await broadcast_msg.copy(chat_id, protect_content=RESTRICT)
+                    await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
                     successful += 1
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
-                    await broadcast_msg.copy(chat_id, protect_content=RESTRICT)
+                    await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
                     successful += 1
                 except UserIsBlocked:
                     await delete_user(chat_id)
