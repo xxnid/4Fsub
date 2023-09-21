@@ -7,7 +7,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from bot import Bot
-from config import ADMINS, CHANNEL_DB, DISABLE_BUTTON, LOGGER
+from config import ADMINS, CHANNEL_DB, DISABLE_CHANNEL_BUTTON, LOGGER
 from helper_func import encode
 
 
