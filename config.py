@@ -16,7 +16,7 @@ API_HASH = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
 CHANNEL_DB = int(os.environ.get("CHANNEL_DB", ""))
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
-RESTRICT = strtobool(os.environ.get("RESTRICT", "True"))
+PROTEC_CONTENT = strtobool(os.environ.get("PROTEC_CONTENT", "True"))
 
 FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "0"))
 FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
